@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pawsitive Care | Premium Dog Care</title>
+  <meta name="description" content="Premium dog care services in Hyderabad offering Grooming, Daycare, and Training. Book online." />
+  <!-- Fonts placeholder: Inter and a serif for branding -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS (via CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper.js for gallery -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    /* Page-wide font usage handled via inline styles on sections as needed */
+  </style>
+</head>
+<body class="bg-white text-gray-800" id="page" style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+  <!-- Header / Navbar -->
+  <header class="bg-white/90 fixed w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="w-8 h-8 bg-blue-600 rounded-full text-white flex items-center justify-center font-bold" aria-label="Logo"></span>
+          <span style="font-family: 'Cormorant Garamond', serif;" class="text-xl">Pawsitive Care</span>
+        </a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+          <a href="checkout.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Book</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md text-gray-700" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-gray-700">Home</a>
+      <a href="services.html" class="block py-2 text-gray-700">Services</a>
+      <a href="about.html" class="block py-2 text-gray-700">About</a>
+      <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+      <a href="checkout.html" class="block py-2 bg-blue-600 text-white rounded-lg text-center">Book</a>
+    </div>
+  </header>
+
+  <main class="pt-20 opacity-0" id="content">
+    <!-- Hero Section -->
+    <section class="relative bg-gray-50 hero">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold">Premium Dog Care</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900" style="font-family: Inter, sans-serif;">
+              Gentle, expert care for your best friend
+            </h1>
+            <p class="text-gray-600 max-w-md">
+              We offer Grooming, Daycare, and Training in Hyderabad with a calm, trustworthy approach. Your dog’s comfort and safety come first.
+            </p>
+            <a href="checkout.html" class="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold shadow hover:opacity-90 transition">
+              Book an Appointment
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-label="arrow">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h14" />
+              </svg>
+            </a>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img src="https://pixabay.com/get/g67a825e49e3ece11c87804f82dd58707df16713c63f55fafa56d1860b59cb40d0c8dd00a4089dd29ee9a6260c13646bbd8c94e1e0f43d3451e343130dcb41bbf_640.jpg" alt="Happy dog at Pawsitive Care" class="w-full h-full object-cover" style="min-height: 320px;"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery (Swiper) -->
+    <section class="bg-white py-16" id="gallerySection">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-semibold mb-6" style="font-family: Inter, sans-serif;">Gallery</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1643435690300-a7af818ea471?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGRvZyUyMDF8ZW58MHwwfHx8MTc1Njg3NjAxOXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Happy dog 1" class="w-full h-56 object-cover rounded-lg"/></div>
+            <div class="swiper-slide"><img src="https://images.pexels.com/photos/33687321/pexels-photo-33687321.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Happy dog 2" class="w-full h-56 object-cover rounded-lg"/></div>
+            <div class="swiper-slide"><img src="https://images.pexels.com/photos/33715586/pexels-photo-33715586.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Happy dog 3" class="w-full h-56 object-cover rounded-lg"/></div>
+            <div class="swiper-slide"><img src="https://pixabay.com/get/g7ac987026391e965578593f2553d8fb1f98602918f459229d6a979576afcb03d0fa0908af8b12683e2cb9ff7453549e3dbb6726e4d06a6206d1aab85c23f1752_640.jpg" alt="Happy dog 4" class="w-full h-56 object-cover rounded-lg"/></div>
+            <div class="swiper-slide"><img src="https://images.pexels.com/photos/33722053/pexels-photo-33722053.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Happy dog 5" class="w-full h-56 object-cover rounded-lg"/></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-16" id="testimonialsSection">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-semibold mb-6" style="font-family: Inter, sans-serif;">What clients say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-md" aria-label="Testimonial">
+            <p class="text-gray-700 mb-4">“Pawsitive Care took wonderful care of our beagle. Our dog was smiling when we picked him up.”</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="w-9 h-9 rounded-full bg-blue-100"></span>
+                <span class="font-semibold" style="font-family: Inter, sans-serif;">A. Rao</span>
+              </div>
+              <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-label="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.946a1 1 0 00.95.69h4.208c.969 0 1.371 1.24.588 1.81l-3.406 2.475a1 1 0 00-.364 1.118l1.304 4.01c.3.922-.755 1.688-1.539 1.118L10 13.77l-3.843 2.47c-.784.57-1.839-.196-1.539-1.118l1.304-4.01a1 0 0 00-.364-1.118L2.15 8.41c-.783-.57-.38-1.81.588-1.81h4.208a1 1 0 00.95-.69l1.286-3.946z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md" aria-label="Testimonial">
+            <p class="text-gray-700 mb-4">“Reliable and kind staff. Our pup loves the daycare days.”</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="w-9 h-9 rounded-full bg-blue-100"></span>
+                <span class="font-semibold" style="font-family: Inter, sans-serif;">R. Gupta</span>
+              </div>
+              <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-label="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.946a1 1 0 00.95.69h4.208c.969 0 1.371 1.24.588 1.81l-3.406 2.475a1 1 0 00-.364 1.118l1.304 4.01c.3.922-.755 1.688-1.539 1.118L10 13.77l-3.843 2.47c-.784.57-1.839-.196-1.539-1.118l1.304-4.01a1 0 00-.364-1.118L2.15 8.41c-.783-.57-.38-1.81.588-1.81h4.208a1 0 0 0 .95-.69l1.286-3.946z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md" aria-label="Testimonial">
+            <p class="text-gray-700 mb-4">“Clean, friendly and professional. Highly recommend.”</p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <span class="w-9 h-9 rounded-full bg-blue-100"></span>
+                <span class="font-semibold" style="font-family: Inter, sans-serif;">Priya S</span>
+              </div>
+              <div class="flex items-center space-x-1">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-label="star"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.946a1 1 0 00.95.69h4.208c.969 0 1.371 1.24.588 1.81l-3.406 2.475a1 1 0 00-.364 1.118l1.304 4.01c.3.922-.755 1.688-1.539 1.118L10 13.77l-3.843 2.47c-.784.57-1.839-.196-1.539-1.118l1.304-4.01a1 1 0 00-.364-1.118L2.15 8.41c-.783-.57-.38-1.81.588-1.81h4.208a1 0 0 0 .95-.69l1.286-3.946z"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-800 text-gray-300 mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Column 1: Brand & Socials -->
+      <div>
+        <h3 class="text-2xl font-serif" style="font-family: 'Cormorant Garamond', serif;">Pawsitive Care</h3>
+        <p class="mt-2 text-gray-300">Premium dog care in Hyderabad. Gentle, professional, and trusted.</p>
+        <div class="flex space-x-3 mt-4">
+          <a href="#" aria-label="Instagram" class="p-2 rounded-full hover:bg-gray-700">
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24" aria-label="instagram"><path d="M7 2h10a5 5 0 012 1.5A5 5 0 012 11V9c0-3.313 2.687-6 6-6h0C13.313 3 11 6.313 11 9v2c0 2.762-2.238 5-5 5H2V5c0-1.1.9-2 2-3z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="p-2 rounded-full hover:bg-gray-700">
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24" aria-label="facebook"><path d="M13 22v-8h3l1-4h-4V6h-2v4H9v4H7v4h2v4h4z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="p-2 rounded-full hover:bg-gray-700">
+            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24" aria-label="twitter"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0016.9 3c-2.5 0-4.5 2-4.5 4.5 0 .35.04.69.12 1.02A12.7 12.7 0 013 4.85a4.5 4.5 0 001.39 6A4.4 4.4 0 012 9.7v.05a4.15 4.15 0 003.33 4.07 4.18 4.18 0 01-1.87.07 4.15 4.15 0 003.87 2.87A8.33 8.33 0 012 19.54 11.75 11.75 0 0012 21"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold" style="font-family: Inter, sans-serif;">Quick Links</h4>
+        <ul class="mt-2 space-y-2">
+          <li><a href="services.html" class="hover:underline">Grooming</a></li>
+          <li><a href="services.html" class="hover:underline">Daycare</a></li>
+          <li><a href="services.html" class="hover:underline">Training</a></li>
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Newsletter -->
+      <div>
+        <h4 class="text-lg font-semibold" style="font-family: Inter, sans-serif;">Newsletter</h4>
+        <form class="mt-2 flex flex-col sm:flex-row" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" aria-label="Email address" placeholder="Email address" required class="w-full sm:flex-1 px-3 py-2 rounded-md bg-white text-gray-800 outline-none focus:ring-2 focus:ring-blue-500" />
+          <button class="mt-2 sm:mt-0 sm:ml-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition">Subscribe</button>
+        </form>
+        <p class="text-xs text-gray-400 mt-2">We send tips and offers from time to time.</p>
+      </div>
+    </div>
+    <hr class="border-gray-700 mx-6" />
+    <div class="text-center py-4 text-sm text-gray-400">© 2025 Pawsitive Care. All rights reserved.</div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => { menu?.classList.toggle('hidden'); });
+
+    // Page fade-in on load
+    window.addEventListener('load', () => { document.getElementById('content')?.classList.remove('opacity-0'); });
+
+    // Scroll animations for sections below hero
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-6');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => {
+      if (!sec.classList.contains('hero')) {
+        sec.classList.add('opacity-0', 'translate-y-6');
+        sec.style.transition = 'opacity 700ms, transform 700ms';
+        observer.observe(sec);
+      }
+    });
+
+    // Initialize Swiper gallery
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      slidesPerView: 1,
+      spaceBetween: 12,
+      breakpoints: { 640: { slidesPerView: 3 } }
+    });
+  </script>
+</body>
+</html>
